@@ -1,0 +1,12 @@
+{application, task_queue,
+ [
+  {description, "Task Queue Behaviour"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { task_queue_app, []}},
+  {env, []}
+ ]}.
