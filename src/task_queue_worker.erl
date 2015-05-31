@@ -77,7 +77,7 @@ code_change(
         OldVsn,
         #state{ worker_module = WorkerModule, worker_state = WorkerState } = State,
         Extra) ->
-    {ok, NewWorkerState} = erlang:apply(WorkerModule, code_cahnge, [OldVsn, WorkerState, Extra]),
+    {ok, NewWorkerState} = erlang:apply(WorkerModule, code_change, [OldVsn, WorkerState, Extra]),
     {ok, State#state{ worker_state = NewWorkerState } }.
 
 %%%===================================================================
